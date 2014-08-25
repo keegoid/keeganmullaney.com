@@ -39,7 +39,7 @@ If you like this workflow and decide to adopt it, please do let me know: [@keego
 
 ##### Fork and clone
 
-1. fork http://github.com/keegoid/middleman-html5-foundation/fork
+1. fork http://github.com/keegoid/keeganmullaney.com/fork
 1. clone your own fork using HTTPS or SSH (recommended)
    - HTTPS: `git clone https://github.com/yourusername/keeganmullaney.com.git`
    -   SSH: `git clone git@github.com:yourusername/keeganmullaney.com.git`
@@ -179,6 +179,14 @@ push or pull changes to/from origin (GitHub):
 Note, use `git config --list` to view all configured options.
 
 I hope you find this workflow as efficient and effective as I do.
+
+## License
+
+Author : Keegan Mullaney  
+Company: KM Authorized LLC  
+Website: http://kmauthorized.com
+
+MIT: http://kma.mit-license.org
 
 
 [mm]:       http://middlemanapp.com/

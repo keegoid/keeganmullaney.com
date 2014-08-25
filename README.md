@@ -32,6 +32,7 @@ If you like this workflow and decide to adopt it, please do let me know: [@keego
       - [Markdown](#markdown)
       - [Git remote](#git-remote)
       - [Git push and pull](#git-push-and-pull)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

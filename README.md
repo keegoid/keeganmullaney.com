@@ -5,7 +5,7 @@ My personal blog site powered by [Middleman][mm] and [GitHub][gh], hosted by [Bi
 
 Overview:
 
-As I've taken on more projects, my free time has become somewhat lacking. I wanted to find a workflow for maintaining a personal blog site and creating new blog posts that would be easy to remember and repeat, produce a fast, secure site and be easily transferable to any host or server. I decided a [static site generator][mm] utilizing [Markdown][md] formatted posts was the way to go. What follows is my ultimate time-saving, static site generating, refreshingly tranquil blog post writing process:
+As I've taken on more projects, my free time has become somewhat lacking. I wanted to find a workflow for maintaining a personal blog site and creating new blog posts that would be easy to remember and repeat, produce a fast, secure site and be easily transferable to any host or server. I decided a [static site generator][mm] utilizing posts formatted in [Markdown][md] was the way to go. What follows is my ultimate time-saving, static site generating, refreshingly tranquil blog post writing process:
 
 - version control is done with [git][git], and all is right with the world
 - changes to code and this readme file are done with [gEdit][ge] on my [CentOS 7.0 x64][centos] workstation
@@ -16,6 +16,24 @@ As I've taken on more projects, my free time has become somewhat lacking. I want
 - rinse and repeat
 
 If you like this workflow and decide to adopt it, please do let me know: [@keegoid][twitter]
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Usage](#usage)
+      - [Fork and clone](#fork-and-clone)
+      - [BitBalloon setup](#bitballoon-setup)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+      - [Getting started](#getting-started)
+      - [Steps](#steps)
+- [Workflow](#workflow)
+      - [Markdown](#markdown)
+      - [Git remote](#git-remote)
+      - [Git push and pull](#git-push-and-pull)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Usage
 

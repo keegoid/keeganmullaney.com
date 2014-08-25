@@ -5,7 +5,7 @@ My personal blog site powered by [Middleman][mm] and [GitHub][gh], hosted by [Bi
 
 Overview:
 
-As I've taken on more projects, my free time has become somewhat lacking. I wanted to find a workflow for maintaining a personal blog site and creating new blog posts that would be easy to remember and repeat, produce a fast, secure site and be easily transferrable to any host or server. I decided a [static site generator][mm] utilizing [Markdown][md] formatted posts was the way to go. What follows is my ultimate time-saving, static site generating, refreshingly tranquil blog post writing process:
+As I've taken on more projects, my free time has become somewhat lacking. I wanted to find a workflow for maintaining a personal blog site and creating new blog posts that would be easy to remember and repeat, produce a fast, secure site and be easily transferable to any host or server. I decided a [static site generator][mm] utilizing [Markdown][md] formatted posts was the way to go. What follows is my ultimate time-saving, static site generating, refreshingly tranquil blog post writing process:
 
 - version control is done with [git][git], and all is right with the world
 - changes to code and this readme file are done with [gEdit][ge] on my [CentOS 7.0 x64][centos] workstation
@@ -150,7 +150,7 @@ git checkout -b 'branch-name'
 git branch -u origin/branch-name branch-name
 ```
 
-Now you can simply use `git push` or `git pull` from your current branch, inluding master. It's nice to be able to reduce the length of these commands so you don't have to think about what you're pushing or pulling each time. Just make sure you've got the right branch checked out!
+Now you can simply use `git push` or `git pull` from your current branch, including master. It's nice to be able to reduce the length of these commands so you don't have to think about what you're pushing or pulling each time. Just make sure you've got the right branch checked out!
 
 **long versions**
 

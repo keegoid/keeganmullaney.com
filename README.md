@@ -7,12 +7,12 @@ Overview:
 
 As I've taken on more projects, my free time has become somewhat lacking. I wanted to find a workflow for maintaining a personal blog site and creating new blog posts that would be easy to remember and repeat, produce a fast, secure site and be easily transferable to any host or server. I decided a [static site generator][mm] utilizing posts formatted in [Markdown][md] was the way to go. What follows is my ultimate time-saving, static site generating, refreshingly tranquil blog post writing process:
 
-- version control is done with [git][git], and all is right with the world
+- version control is done with [git][git] and all is right with the world
 - changes to code and this readme file are done with [gEdit][ge] on my [CentOS 7.0 x64][centos] workstation
 - new posts are written in [GitHub flavored Markdown][gfm] using [Draft][draftin] and saved to my [Dropbox][db] repository
 - changes and new posts are committed with [git][git] and pushed to my remote repository on [GitHub][gh]
 - [BitBalloon][bb] listens for pushes to [GitHub][gh], then automatically builds and deploys the static site
-- I read a book, drink some wine, revel in all my new found free time
+- read a book, drink some wine, revel in new-found free time
 - rinse and repeat
 
 If you like this workflow and decide to adopt it, please do let me know: [@keegoid][twitter]
@@ -22,30 +22,24 @@ If you like this workflow and decide to adopt it, please do let me know: [@keego
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [Usage](#usage)
-      - [Fork and clone](#fork-and-clone)
-      - [BitBalloon setup](#bitballoon-setup)
-- [Configuration](#configuration)
+      - [Config.rb](#configrb)
+      - [BitBalloon Setup](#bitballoon-setup)
 - [Contributing](#contributing)
-      - [Getting started](#getting-started)
+      - [Getting Started](#getting-started)
       - [Steps](#steps)
-- [Workflow](#workflow)
-      - [Markdown](#markdown)
-      - [Git remote](#git-remote)
-      - [Git push and pull](#git-push-and-pull)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Usage
 
-##### Fork and clone
+There are a few settings that need to be changed before this site can work for you.
 
-1. fork http://github.com/keegoid/keeganmullaney.com/fork
-1. clone your own fork using HTTPS or SSH (recommended)
-   - HTTPS: `git clone https://github.com/yourusername/keeganmullaney.com.git`
-   -   SSH: `git clone git@github.com:yourusername/keeganmullaney.com.git`
+##### Config.rb
 
-##### BitBalloon setup
+
+
+##### BitBalloon Setup
 
 To set up the automatic [BitBalloon][bb] deploys, log in as a non-root user.  
 
@@ -76,126 +70,27 @@ go to the [BitBalloon][bb] site and:
 
 Now whenever you push changes to [Github][gh], [BitBalloon][bb] will run middleman and deploy the /build folder to your site automatically. Easy!
 
-## Configuration
-
-
-
 ## Contributing
 
-I welcome contributions and pull requests. I look forward to learning from you!
+Contributions are totally welcome.
 
-##### Getting started
+##### Getting Started
 
 A clear intro to [using git][learngit].  
 A good [step-by-step guide][fork] about how to contribute to a GitHub project like this one.
 
 ##### Steps
 
-1. Fork http://github.com/keegoid/keeganmullaney.com/fork
-1. Clone your own fork using HTTPS or SSH (recommended)
-   - HTTPS: `git clone https://github.com/yourusername/keeganmullaney.com.git`
-   -   SSH: `git clone git@github.com:yourusername/keeganmullaney.com.git`
-1. Optionally create your own feature branch `git checkout -b my-new-feature`
-1. Commit your changes `git commit -am 'made some cool changes'`
-1. Push your master or branch commits to GitHub
+1. fork http://github.com/keegoid/kmullaney.com/fork
+1. clone your own fork using HTTPS or SSH (recommended)
+   - HTTPS: `git clone https://github.com/yourusername/kmullaney.com.git`
+   -   SSH: `git clone git@github.com:yourusername/kmullaney.com.git`
+1. optionally create your own feature branch `git checkout -b my-new-feature`
+1. commit your changes `git commit -am 'made some cool changes'`
+1. push your master or branch commits to GitHub
    - `git push origin master`
    - `git push -u origin my-new-feature`
-1. Create a new [Pull request][pull]
-
-## Workflow
-
-##### Markdown
-
-After much tribulation with [Markdown][md] editors and various workflows, I've found what I think is a great way to create/maintain my [Markdown][md] docs.
-
-For blog posts or any long-form writing, [Draft][draftin] is wonderful, especially the `F11` mode. It mostly works with [GitHub flavored Markdown][gfm] except for strikethrough and alignment of table columns. 
-I then *Export* my document to the appropriate [git][git] repository in [Dropbox][db] (which then syncs with my various devices).
-Finally, I commit the new document with [git][git] and push it to the remote repository (which then gets automatically built and deployed on [BitBalloon][bb]).
-
-For other [Markdown][md] docs like *README.md* or *LICENSE.md* I find [gEdit][ge] to be easy and efficient. I can make some quick edits, commit changes in [git][git] and push them to [GitHub][gh] with just a few commands. It's also easy to repeat commits and pushes with the keyboard up arrow from the [Linux console][lc].  
-to commit again: `up up enter`, to push again: `up up enter`
-
-##### Git remote
-
-If you didn't start by cloning your repository on [GitHub][gh], for example if you used `git init` on your workstation, you'll need to add your remote origin URL:
-
-```bash
-# HTTPS:
-git remote add origin https://github.com/yourusername/keeganmullaney.com.git
-
-# SSH:
-git remote add origin git@github.com:yourusername/keeganmullaney.com.git
-```
-
-You can also set the upstream repository to fetch changes from this project:
-
-```bash
-# HTTPS:
-git remote add upstream https://github.com/keegoid/keeganmullaney.com.git
-
-# SSH:
-git remote add upstream git@github.com:keegoid/keeganmullaney.com.git
-```
-
-Then `git fetch upstream master` and `git merge upstream/master`  
-or accomplish both with `git pull upstream master`
-
-##### Git push and pull
-
-```bash
-# git config
-# author
-git config --global user.name 'Keegan Mullaney'
-git config --global user.email 'keegan@kmauthorized.com'
-# select a text editor, I prefer vi, you can also use vim or something else
-git config --global core.editor vi
-# add some SVN-like aliases
-git config --global alias.st status
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.up rebase
-git config --global alias.ci commit
-# set the default push and pull methods for git to "matching"
-git config --global push.default matching
-git config --global pull.default matching
-
-# commit changes with git
-git commit -am 'update README'
-
-########## new branch method 1 ##########
-
-# create a new branch and check it out
-git checkout -b 'branch-name'
-
-# push changes to remote repo and set remote upstream in config
-git push -u origin branch-name
-
-# checkout the master branch again
-git checkout master
-
-########## new branch method 2 ##########
-
-# create new branch without checking it out
-git branch 'branch-name'
-
-# push new branch to origin
-git push origin 'branch-name'
-
-# link the origin/<branch> with your local <branch>
-git branch -u origin/branch-name branch-name
-```
-
-Now you can simply use `git push` or `git pull` from your current branch, including master. It's nice to be able to reduce the length of these commands so you don't have to think about what you're pushing or pulling each time. Just make sure you've got the right branch checked out!
-
-**long versions**
-
-push or pull changes to/from origin (GitHub):  
-`git push origin master` or `git push origin branch-name`  
-`git pull origin master` or `git pull origin branch-name`
-
-Note, use `git config --list` to view all configured options.
-
-I hope you find this workflow as efficient and effective as I do.
+1. create a new [Pull request][pull]
 
 ## License
 
